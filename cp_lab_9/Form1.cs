@@ -34,26 +34,26 @@ namespace cp_lab_9
             // Накопичуємо інформацію про хід роботи програми у змінній sMessage
             string sMessage = " ";
             MyTr[0] = MyTr1;
-            if (MyTr.ErrorKod > 0) sMessage = sMessage + "\n 1 Транзистор не додано " + MyTr1.TransName + " код помилки - " + MyTr.ErrorKod.ToString(); 
-            else sMessage = sMessage + "\n 1 Транзистор додано " + MyTr1.TransName + " ";
+            if (MyTr.ErrorKod > 0) sMessage += "\n 1 Транзистор не додано " + MyTr1.TransName + " код помилки - " + MyTr.ErrorKod.ToString(); 
+            else sMessage += "\n 1 Транзистор додано " + MyTr1.TransName + " ";
             MyTr[1] = MyTr2;
-            if (MyTr.ErrorKod > 0) sMessage = sMessage + "\n 2 Транзистор не додано " + MyTr2.TransName + " код помилки - " + MyTr.ErrorKod.ToString(); 
-            else sMessage = sMessage + "\n 2 Транзистор додано " + MyTr2.TransName + " ";
+            if (MyTr.ErrorKod > 0) sMessage += "\n 2 Транзистор не додано " + MyTr2.TransName + " код помилки - " + MyTr.ErrorKod.ToString(); 
+            else sMessage += "\n 2 Транзистор додано " + MyTr2.TransName + " ";
             MyTr[2] = MyTr3;
-            if (MyTr.ErrorKod > 0) sMessage = sMessage + "\n 3 Транзистор не додано " + MyTr3.TransName + " код помилки - " + MyTr.ErrorKod.ToString(); 
-            else sMessage = sMessage + "\n 3 Транзистор додано " + MyTr3.TransName + " ";
+            if (MyTr.ErrorKod > 0) sMessage += "\n 3 Транзистор не додано " + MyTr3.TransName + " код помилки - " + MyTr.ErrorKod.ToString(); 
+            else sMessage += "\n 3 Транзистор додано " + MyTr3.TransName + " ";
             MyTr[3] = MyTr4;
-            if (MyTr.ErrorKod > 0) sMessage = sMessage + "\n 4 Транзистор не додано " + MyTr4.TransName + " код помилки - " + MyTr.ErrorKod.ToString(); 
-            else sMessage = sMessage + "\n 4 Транзистор додано " + MyTr4.TransName + " ";
+            if (MyTr.ErrorKod > 0) sMessage += "\n 4 Транзистор не додано " + MyTr4.TransName + " код помилки - " + MyTr.ErrorKod.ToString(); 
+            else sMessage += "\n 4 Транзистор додано " + MyTr4.TransName + " ";
             MyTr[4] = MyTr5;
-            if (MyTr.ErrorKod > 0) sMessage = sMessage + "\n 5 Транзистор не додано " + MyTr5.TransName + " код помилки - " + MyTr.ErrorKod.ToString(); 
-            else sMessage = sMessage + "\n 5 Транзистор додано " + MyTr5.TransName + " ";
+            if (MyTr.ErrorKod > 0) sMessage += "\n 5 Транзистор не додано " + MyTr5.TransName + " код помилки - " + MyTr.ErrorKod.ToString(); 
+            else sMessage += "\n 5 Транзистор додано " + MyTr5.TransName + " ";
             MyTr[5] = MyTr6;
-            if (MyTr.ErrorKod > 0) sMessage = sMessage + "\n 6 Транзистор не додано " + MyTr6.TransName + " код помилки - " + MyTr.ErrorKod.ToString(); 
-            else sMessage = sMessage + "\n 6 Транзистор додано " + MyTr6.TransName + " ";
+            if (MyTr.ErrorKod > 0) sMessage += "\n 6 Транзистор не додано " + MyTr6.TransName + " код помилки - " + MyTr.ErrorKod.ToString(); 
+            else sMessage += "\n 6 Транзистор додано " + MyTr6.TransName + " ";
             MyTr[6] = MyTr7;
-            if (MyTr.ErrorKod > 0) sMessage = sMessage + "\n 7 Транзистор не додано " + MyTr7.TransName + " кодпомилки - " + MyTr.ErrorKod.ToString(); 
-            else sMessage = sMessage + "\n 7 Транзистор додано " + MyTr7.TransName + " ";
+            if (MyTr.ErrorKod > 0) sMessage += "\n 7 Транзистор не додано " + MyTr7.TransName + " кодпомилки - " + MyTr.ErrorKod.ToString(); 
+            else sMessage += "\n 7 Транзистор додано " + MyTr7.TransName + " ";
             label1.Text = sMessage;
             // Виведемо інформацію про додані (чи не додані) транзистори у мітку label1
             // Сформуємо інформацію про записані транзистори з допомогою перевизначеного нами методу ToString у
@@ -61,7 +61,7 @@ namespace cp_lab_9
             sMessage = "";
             for (int i = 0; i < MyTr.Length; i++)
             {
-                if (MyTr[i] != null) sMessage = sMessage + "\n " + MyTr[i].ToString();
+                if (MyTr[i] != null) sMessage += "\n " + MyTr[i].ToString();
             }
             label2.Text = sMessage;
         }
